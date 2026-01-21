@@ -10,6 +10,8 @@ body {
   background-color: #EFF6FF; /* White Blue */ 
   margin-top: 1in;
   margin-left: 2in;
+  margin-right: 2in;
+  margin-bottom: 1in;
 }
 
 .navbar {
