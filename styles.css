@@ -7,7 +7,7 @@
 body {
   font-family: Arial, sans-serif;
   padding-top: 200px;
-  background-color: #1D2634;
+  background-color: #DEE6F5;
 }
 
 .navbar {
@@ -25,7 +25,7 @@ body {
   height: 200px;
 
   background-color: #1D2634;
-  border-bottom: 3px solid #2258c3;
+  border-bottom: 3px solid #B3966B;
 }
 
 .logo img {
