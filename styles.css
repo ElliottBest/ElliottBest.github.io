@@ -13,6 +13,7 @@ body {
 .navbar {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 40px;
 
   position: fixed;
@@ -23,11 +24,8 @@ body {
   width: 100%;
   height: 192px;
 
-  margin: 0 auto;
-  padding: 10px 40px;
-
   background-color: #1D2634;
-  border-radius: 0px;
+  border-bottom: 3px solid #2258c3
 }
 
 .logo img {
