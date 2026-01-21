@@ -22,7 +22,7 @@ body {
   right: 0;
 
   width: 100%;
-  height: 192px;
+  height: 200px;
 
   background-color: #1D2634;
   border-bottom: 3px solid #2258c3
@@ -40,15 +40,26 @@ body {
 }
 
 .nav-links a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
+  position: relative;
   padding: 12px 20px;
-  border-radius: 20px;
-  background-color: #2258c3;
+  color: white;
+  text-decoration: none;
 }
 
-.nav-links a:hover {
-  background-color: #fd2df3;
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  height: 3px;
+  background: #fd2df3;
+  transition: width 0.3s ease, left 0.3s ease;
 }
+
+.nav-links a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
 
