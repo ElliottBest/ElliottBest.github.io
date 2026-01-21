@@ -52,32 +52,3 @@ body {
   background-color: #fd2df3;
 }
 
-.sidebar {
-  width: 250px;                  /* adjust width */
-  background-color: #FFF;        /* dark blue */
-  color: white;
-  padding: 20px;
-  height: 100vh;                 /* full height */
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;            /* circular image */
-  object-fit: cover;
-  margin-bottom: 20px;
-}
-
-.sidebar a {
-  color: #00bcd4;
-  text-decoration: none;
-}
-
-.sidebar a:hover {
-  text-decoration: underline;
-}
