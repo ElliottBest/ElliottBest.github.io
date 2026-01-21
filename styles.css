@@ -10,6 +10,11 @@ body {
   background-color: #DEE6F5;
 }
 
+main {
+  margin-top: 1in;
+  margin-left: 2in;
+}
+
 .navbar {
   display: flex;
   align-items: center;
