@@ -27,16 +27,20 @@ body {
   margin: 0 auto;
   padding: 10px 40px;
 
-  background-color: #101B30;
+  background-color: #1D2634;
   border-radius: 30px;
 }
 
-/* LOGO */
 .logo {
   width: 12rem;
   color: white;
   font-size: 24px;
   font-weight: bold;
+}
+
+.logo img {
+  height: 50px;   /* smaller logo */
+  width: auto;    /* keeps proportions */
 }
 
 /* NAV LINKS */
