@@ -6,60 +6,55 @@
 
 body {
   font-family: Arial, sans-serif;
-  padding-top: 200px; /* space for fixed navbar */
+  padding-top: 200px;
   background-color: #101B30;
 }
 
+/* NAVBAR */
 .navbar {
   display: flex;
-  padding: 10px 40px;
-  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  width: 95%;                 /* ~full width */
-  height: 192px;               /* ~2 inches */
-  border-radius: 30px;        /* Rounded corners /*
+
+  width: 95%;
+  height: 192px;
+
+  margin: 0 auto;
+  padding: 10px 40px;
+
   background-color: #101B30;
-  justify-content: space-between;
-  align-items: left;
+  border-radius: 30px;
 }
 
+/* LOGO */
 .logo {
-        width: 12rem;
-      }
-
-.menu {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.item {
-  margin: 0 15px;
-}
-
-.item a {
-  text-decoration: none;
-  color: #333;
+  width: 12rem;
+  color: white;
+  font-size: 24px;
   font-weight: bold;
 }
 
-.item a:hover {
-  color: #2258c3;
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
 }
 
-button {
-  background-color: #2258c3;
+.nav-links a {
+  text-decoration: none;
   color: white;
-  border: none;
-  padding: 10px 20px;
+  font-weight: bold;
+  padding: 12px 20px;
   border-radius: 20px;
-  cursor: pointer;
+  background-color: #2258c3;
 }
 
-button:hover {
+.nav-links a:hover {
   background-color: #fd2df3;
 }
