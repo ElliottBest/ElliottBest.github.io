@@ -12,8 +12,7 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  gap: 40px;
 
   position: fixed;
   top: 0;
@@ -31,14 +30,14 @@ body {
 }
 
 .logo img {
-  height: 125px;   /* smaller logo */
-  width: auto;    /* keeps proportions */
+  height: 175px; 
+  width: auto; 
 }
 
 .nav-links {
   display: flex;
-  list-style: none;
-  gap: 20px;
+  list-style: none; 
+  gap: 20px; 
 }
 
 .nav-links a {
