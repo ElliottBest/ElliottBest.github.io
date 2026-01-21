@@ -7,7 +7,7 @@
 body {
   font-family: Arial, sans-serif;
   padding-top: 200px;
-  background-color: #DEE6F5;
+  background-color: #EFF6FF; /* White Blue */ 
   margin-top: 1in;
   margin-left: 2in;
 }
@@ -26,7 +26,7 @@ body {
   width: 100%;
   height: 200px;
 
-  background-color: #EFF6FF;
+  background-color: #1D2634; /* Dark Blue */ 
 }
 
 .logo img {
@@ -43,7 +43,7 @@ body {
 .nav-links a {
   position: relative;
   padding: 12px 20px;
-  color: #B3966B;
+  color: #B3966B; /* Gold */ 
   text-decoration: none;
 }
 
@@ -54,7 +54,7 @@ body {
   left: 50%;
   width: 0%;
   height: 3px;
-  background: #B3966B;
+  background: #B3966B; /* Gold */ 
   transition: width 0.3s ease, left 0.3s ease;
 }
 
