@@ -101,6 +101,7 @@ main p {
   margin: 0 auto;  
   padding: 12px;         /* extra space inside the iframe container */
   box-sizing: border-box; /* ensures padding doesn’t expand width */
+  transition: opacity 0.3s ease;
 }
 
 .pdf-background {
