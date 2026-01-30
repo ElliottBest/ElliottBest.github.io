@@ -33,15 +33,25 @@
 
 <iframe class="simple-polished-frame"></iframe>
 
-    <script>
+<script>
   const buttons = document.querySelectorAll('.pdf-tabs button');
   const frame = document.querySelector('.simple-polished-frame');
 
   buttons.forEach(btn => {
     btn.addEventListener('click', () => {
+      // update iframe
       frame.src = btn.dataset.pdf;
+
+      // remove active from all
+      buttons.forEach(b => b.classList.remove('active'));
+
+      // add active to clicked
+      btn.classList.add('active');
     });
   });
+
+  // optional: set first tab active on load
+  buttons[0].click();
 </script>
   
 
