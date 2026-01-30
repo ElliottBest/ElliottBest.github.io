@@ -42,13 +42,6 @@ body {
   gap: 20px; 
 }
 
-.simple-polished-frame {
-  width: 100%;
-  height: 900px;
-  border: 1px solid #d4b870;
-  border-radius: 0 8px 8px 8px;
-}
-
 .nav-links a {
   position: relative;
   padding: 12px 20px;
@@ -99,10 +92,35 @@ main p {
   margin: 16px;
 }
 
+.simple-polished-frame {
+  width: 100%;
+  height: 900px;
+  border: 1px solid #1D2634; /* Dark Blue */ 
+  border-radius: 0 8px 8px 8px;
+  display: block;
+  margin: 0 auto;  
+  padding: 12px;         /* extra space inside the iframe container */
+  box-sizing: border-box; /* ensures padding doesn’t expand width */
+}
+
+.pdf-background {
+  position: relative;
+  width: 100%;
+  background-color: #1D2634; /* Dark Blue */
+  border: 1px solid #1D2634; /* Dark Blue */
+  border-radius: 12px;
+  padding: 16px;
+  box-sizing: border-box;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
 .pdf-tabs {
   display: flex;
   gap: 8px;
-  margin-bottom: 16px;
+  margin-top: 0; /* reset, spacing handled by body margin */
+  justify-content: flex-start;
+  margin-bottom: 12px;
 }
 
 .pdf-tabs button {
@@ -117,11 +135,13 @@ main p {
 
 .pdf-tabs button:hover {
   background: #e6d19a;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .pdf-tabs button.active {
   background: #fff;
   border-bottom: 1px solid #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 
