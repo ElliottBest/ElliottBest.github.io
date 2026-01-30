@@ -99,5 +99,31 @@ main p {
   margin: 16px;
 }
 
+.folder {
+  width: 250px;
+  background: #fdd835; /* folder yellow */
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  overflow: hidden;
+  position: relative;
+  font-family: sans-serif;
+}
+
+.tab {
+  width: 80px;      /* width of the tab */
+  height: 30px;     /* height of the tab */
+  background: #fbc02d; /* slightly darker yellow */
+  position: absolute;
+  top: 0;
+  left: 20px;       /* distance from left edge */
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.body {
+  padding: 40px 20px 20px 20px; /* top padding makes space for the tab */
+}
+
 
 
