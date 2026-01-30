@@ -26,18 +26,26 @@
 
   <main>
 
-    <div class="folder">
-  <div class="tab"></div>
-  <div class="body">
+<div class="pdf-tabs">
+  <button data-pdf="pdfs/Revelation.pdf">PDF 1</button>
+  <button data-pdf="pdfs/Groups and Subgroups.pdf">PDF 2</button>
+</div>
+
+<iframe class="simple-polished-frame"></iframe>
+
+    <script>
+  const buttons = document.querySelectorAll('.pdf-tabs button');
+  const frame = document.querySelector('.simple-polished-frame');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      frame.src = btn.dataset.pdf;
+    });
+  });
+</script>
   
 
-<iframe
-  src="pdfs/Revelation.pdf"
-  class="simple-polished-frame">
-</iframe>
 
-     </div>
-</div>
  
   </main>
 
