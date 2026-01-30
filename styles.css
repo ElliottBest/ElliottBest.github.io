@@ -45,7 +45,8 @@ body {
 .nav-links a {
   position: relative;
   padding: 12px 20px;
-  color: #B3966B; /* Gold */ 
+  color: #B3966B; /* Gold */
+  font-size: 1.25rem; /* 15 pt. */
   text-decoration: none;
 }
 
