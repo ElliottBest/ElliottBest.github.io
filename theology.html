@@ -36,24 +36,28 @@
 </div>
 
 <script>
-  const buttons = document.querySelectorAll('.pdf-tabs button');
-  const frame = document.querySelector('.simple-polished-frame');
+const buttons = document.querySelectorAll('.pdf-tabs button');
+const frame = document.querySelector('.simple-polished-frame');
 
-  buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      // update iframe
+buttons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    // fade out
+    frame.style.opacity = 0;
+
+    // update iframe after short delay
+    setTimeout(() => {
       frame.src = btn.dataset.pdf;
+      frame.style.opacity = 1;
+    }, 150);
 
-      // remove active from all
-      buttons.forEach(b => b.classList.remove('active'));
-
-      // add active to clicked
-      btn.classList.add('active');
-    });
+    // update active tab
+    buttons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
   });
+});
 
-  // optional: set first tab active on load
-  buttons[0].click();
+// set first tab active on load
+buttons[0].click();
 </script>
   
 
