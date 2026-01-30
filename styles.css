@@ -21,6 +21,7 @@ body {
   gap: 40px;
 
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   right: 0;
@@ -101,7 +102,7 @@ main p {
   margin: 0 auto;  
   padding: 12px;         /* extra space inside the iframe container */
   box-sizing: border-box; /* ensures padding doesn’t expand width */
-  transition: opacity 0.3s ease;
+  z-index: 1;
 }
 
 .pdf-background {
@@ -117,6 +118,7 @@ main p {
   margin-right: 0;
   margin-bottom: 24px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  z-index: 1;
 }
 
 .pdf-tabs {
@@ -128,8 +130,7 @@ main p {
   justify-content: flex-start;
   margin-bottom: 12px;
   position: relative;
-  top: -12px;          /* lifts tabs above the background box */
-  z-index: 10;         /* ensures tabs sit on top */
+  z-index: 1;
 }
 
 .pdf-tabs button {
