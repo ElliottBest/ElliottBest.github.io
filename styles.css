@@ -123,7 +123,6 @@ main p {
 
 .pdf-tabs {
   display: flex;
-  gap: 8px;
   margin-top: 0; /* reset, spacing handled by body margin */
   margin-left: 0;        /* align with existing page 2in margin */
   margin-right: 0;
