@@ -123,11 +123,11 @@ main p {
 
 .pdf-tabs {
   display: flex;
+  gap: 8px; /* This is the horizontal space between the tabs */ 
   margin-top: 0; /* reset, spacing handled by body margin */
   margin-left: 0;        /* align with existing page 2in margin */
   margin-right: 0;
   justify-content: flex-start;
-  margin-bottom: 12px;
   position: relative;
   z-index: 1;
 }
@@ -140,6 +140,7 @@ main p {
   padding: 8px 16px;
   cursor: pointer;
   font-weight: bold;
+  color: #B3966B; /* Gold */ 
 }
 
 .pdf-tabs button:hover {
