@@ -113,7 +113,7 @@ main p {
   border-radius: 12px;
   padding: 16px;
   box-sizing: border-box;
-  margin-top: 12px;      /* small gap below navbar/tabs */
+  margin-top: 0;     
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 24px;
@@ -134,7 +134,7 @@ main p {
 
 .pdf-tabs button {
   background: #1D2634; /* Dark Blue */ 
-  border: 1px solid #1D2634;
+  border: 1px solid #1D2634; /* Dark Blue *
   border-radius: 8px 8px 0 0;
   border-bottom: 1px solid transparent; /* avoids double border */
   padding: 8px 16px;
@@ -144,12 +144,12 @@ main p {
 }
 
 .pdf-tabs button:hover {
-  background: #e6d19a;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .pdf-tabs button.active {
   background: #fff;
+  color:  #1D2634; /* Dark Blue *
   border-bottom: 1px solid #fdf2d4; /* matches background color */
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
