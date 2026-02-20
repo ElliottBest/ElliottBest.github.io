@@ -127,6 +127,8 @@ main p {
   margin-top: 0; /* reset, spacing handled by body margin */
   margin-left: 0;        /* align with existing page 2in margin */
   margin-right: 0;
+  margin-left: 12px;
+  border-radius: 8px;
   justify-content: flex-start;
   position: relative;
   z-index: 1;
