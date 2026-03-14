@@ -110,7 +110,7 @@ main p {
   width: 100%;
   background-color: #1D2634; /* Dark Blue */
   border: 1px solid #1D2634; /* Dark Blue */
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 16px;
   box-sizing: border-box;
   margin-top: 0;     
@@ -128,21 +128,21 @@ main p {
   margin-left: 0;        /* align with existing page 2in margin */
   margin-right: 0;
   margin-left: 12px;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
   justify-content: flex-start;
   position: relative;
   z-index: 1;
 }
 
 .pdf-tabs button {
-  background: #1D2634; /* Dark Blue */ 
-  border: 1px solid #1D2634; /* Dark Blue *
+  border: 1px solid #1D2634; /* Dark Blue */
   border-radius: 8px 8px 0 0;
   border-bottom: 1px solid transparent; /* avoids double border */
   padding: 8px 16px;
   cursor: pointer;
-  font-weight: bold;
-  color: #B3966B; /* Gold */ 
+  background: #fff;
+  color:  #1D2634; /* Dark Blue */
+  overflow: hidden;
 }
 
 .pdf-tabs button:hover {
@@ -150,8 +150,9 @@ main p {
 }
 
 .pdf-tabs button.active {
-  background: #fff;
-  color:  #1D2634; /* Dark Blue *
+  background: #1D2634; /* Dark Blue */
+  font-weight: bold;
+  color: #B3966B; /* Gold */ 
   border-bottom: 1px solid #fdf2d4; /* matches background color */
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
