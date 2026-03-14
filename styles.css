@@ -93,6 +93,10 @@ main p {
   margin: 16px;
 }
 
+.indent {
+  text-indent: 2em;
+}
+
 .simple-polished-frame {
   width: 100%;
   height: 900px;
