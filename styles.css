@@ -127,7 +127,7 @@ main p {
   margin-top: 0; /* reset, spacing handled by body margin */
   margin-left: 0;        /* align with existing page 2in margin */
   margin-right: 0;
-  margin-left: 12px;
+  margin-left: 16px;
   border-radius: 8px 8px 0 0;
   justify-content: flex-start;
   position: relative;
@@ -142,7 +142,6 @@ main p {
   cursor: pointer;
   background: #fff;
   color:  #1D2634; /* Dark Blue */
-  overflow: hidden;
 }
 
 .pdf-tabs button:hover {
