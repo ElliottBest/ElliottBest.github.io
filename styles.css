@@ -152,7 +152,6 @@ main p {
   background: #1D2634; /* Dark Blue */
   font-weight: bold;
   color: #B3966B; /* Gold */ 
-  border-bottom: 1px solid #fdf2d4; /* matches background color */
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
