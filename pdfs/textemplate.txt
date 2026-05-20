@@ -28,7 +28,6 @@
   \usepackage{multicol}
     \setlength{\columnsep}{1cm}
 
-  \usepackage[english, greek]{babel}
 %   \usepackage{anyfontsize}
 % \usepackage{xcolor}
 %   \definecolor{bestblue}{HTML}{101B30}
@@ -46,7 +45,6 @@
 
   \newcommand{\F}{{\mathcal F}}
   \newcommand{\G}{{\mathcal G}}
-  \renewcommand{\P}{\mathcal P}
 
   \renewcommand{\to}{\rightarrow}
   \newcommand{\iso}{\cong}
@@ -56,8 +54,11 @@
   \newcommand{\eval}{\bigg\rvert}
   \newcommand{\normin}{\mathrel{\triangleleft}}
   \newcommand{\ds}{\displaystyle}
+  \newcommand{\tand}{\;\textrm{and}\;}
+  \newcommand{\tor}{\;\text{or}\;}
 
-  \newcommand{\togreek}[1]{{\selectlanguage{Greek}#1\selectlanguage{English}}}
+  \usepackage[english, greek]{babel}
+    \newcommand{\togreek}[1]{{\selectlanguage{greek}#1\selectlanguage{english}}}
 
   \newcounter{catechism} 
     \setcounter{catechism}{1}
@@ -74,19 +75,41 @@
       \draw[gray]([yshift=#1]current page.north west)--([yshift=#1]current page.south west);
     \end{tikzpicture}}
 
+  \usepackage{listings}
+    \definecolor{codegreen}{rgb}{0,0.6,0}
+    \definecolor{codegray}{rgb}{0.5,0.5,0.5}
+    \definecolor{codepurple}{rgb}{0.58,0,0.82}
+    \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+  \lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2}
+  \lstset{style=mystyle}
+
 \begin{document} 
-  \selectlanguage{English}
+  \selectlanguage{english}
   \thispagestyle{empty}
 % \pagenumbering{gobble}
 
-  \noindent {\Large A Title \vspace{2mm} \\
+  \vspace*{3cm} \noindent {\Large A Title \vspace{2mm} \\
     \noindent \textit{\&} A Title Continued} \vspace{14cm} \\
-    \noindent \textit{A Subtitle} \vspace{1mm} \newpage
+    \noindent \textit{A Subtitle} \newpage
 
-\theendnotes
+Hello World!
+
+% \theendnotes
 
 \end{document} 
-
-
-
-
