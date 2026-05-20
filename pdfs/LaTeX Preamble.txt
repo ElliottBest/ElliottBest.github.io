@@ -1,0 +1,92 @@
+  \documentclass{article} 
+% \documentclass{beamer}
+
+  \usepackage{comment}
+
+  \usepackage{amsmath, amsfonts, amssymb, mathtools}
+
+% \usepackage{graphicx}
+%   \usepackage{subcaption}
+    
+% \usepackage{tikz, tkz-euclide, pgfplots}
+%   \usetikzlibrary{cd}
+%   \pgfplotsset{compat=1.18}
+%   \usepgfplotslibrary{polar} 
+%   \usepackage{tkz-fct}
+%   \usepackage{inputenc}
+
+  \usepackage[letterpaper, margin=1.5in, footnotesep=0.5in]{geometry}
+    \usepackage{endnotes}
+    \usepackage[hyperfootnotes=false, linktoc=none]{hyperref}
+ %  \renewcommand{\notesname}{\vspace{-1cm}}
+  \pagenumbering{arabic}
+    \setcounter{page}{0}
+  \frenchspacing 
+
+  \usepackage{enumitem}
+    % [label=\Alph*, \alph*, \Roman*, \roman*, \roman]
+  \usepackage{multicol}
+    \setlength{\columnsep}{1cm}
+
+  \usepackage[english, greek]{babel}
+%   \usepackage{anyfontsize}
+% \usepackage{xcolor}
+%   \definecolor{bestblue}{HTML}{101B30}
+%   \definecolor{bestgold}{HTML}{B2986D}
+  
+% \usepackage{framed}
+% \usepackage{booktabs}
+% \usepackage{tabularray}
+
+  \newcommand{\N}{{\mathbb N}} 
+  \newcommand{\Z}{{\mathbb Z}} 
+  \newcommand{\Q}{{\mathbb Q}} 
+  \newcommand{\R}{{\mathbb R}} 
+  \newcommand{\C}{{\mathbb C}}
+
+  \newcommand{\F}{{\mathcal F}}
+  \newcommand{\G}{{\mathcal G}}
+  \renewcommand{\P}{\mathcal P}
+
+  \renewcommand{\to}{\rightarrow}
+  \newcommand{\iso}{\cong}
+  \newcommand{\cross}{\times}
+  \newcommand{\lhopitaleq}{\stackrel{\mathclap{\normalfont\mbox{\tiny{L'H}}}}{ \; \; = \; \; }}
+  \newcommand{\seg}[1]{\overline{#1}}
+  \newcommand{\eval}{\bigg\rvert}
+  \newcommand{\normin}{\mathrel{\triangleleft}}
+  \newcommand{\ds}{\displaystyle}
+
+  \newcommand{\togreek}[1]{{\selectlanguage{Greek}#1\selectlanguage{English}}}
+
+  \newcounter{catechism} 
+    \setcounter{catechism}{1}
+  \newcommand{\opencat}{\noindent \begin{minipage}{\linewidth} Question \thecatechism. }
+  \newcommand{\midcat}{\stepcounter{catechism} \vspace{2mm} \par \noindent }
+  \newcommand{\closecat}{\end{minipage} \vspace{6mm} \par}
+
+  \newcommand{\verticalrule}[1]{%
+    \begin{tikzpicture}[remember picture, overlay]
+      \draw[gray]([xshift=#1]current page.north west)--([xshift=#1]current page.north east);
+    \end{tikzpicture}}
+  \newcommand{\horizontalrule}[1]{%
+    \begin{tikzpicture}[remember picture, overlay]
+      \draw[gray]([yshift=#1]current page.north west)--([yshift=#1]current page.south west);
+    \end{tikzpicture}}
+
+\begin{document} 
+  \selectlanguage{English}
+  \thispagestyle{empty}
+% \pagenumbering{gobble}
+
+  \noindent {\Large A Title \vspace{2mm} \\
+    \noindent \textit{\&} A Title Continued} \vspace{14cm} \\
+    \noindent \textit{A Subtitle} \vspace{1mm} \newpage
+
+\theendnotes
+
+\end{document} 
+
+
+
+
